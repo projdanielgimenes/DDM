@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2C0059;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px; /* Reduzido para telas menores */
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem; /* Tamanho menor para caber melhor */
+  margin: 50px 0; /* Espaçamento reduzido */
+}
+
+h2 {
+  margin: 15px 0;
+  font-size: 1.2rem; /* Ajustado para telas pequenas */
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #189f38;
+  color: #189f38;
+ 
+  padding: 10px 14px;
+ 
+  font-size: 0.9rem; /* Fonte reduzida */
+  margin: 10px 0; /* Melhor espaçamento em telas pequenas */
+  border-radius: 30px;
+  cursor: pointer;
+  
+}
+
+
+
+#matches {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaço menor entre os jogos */
+  margin: 15px 0;
+  width: 100%; /* Adapta ao tamanho da tela */
+}
+
+.match {
+  background-color: #3C0077;
+  padding: 5px; /* Menor padding */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  max-width: 280px; /* Reduz a largura */
+  margin: 5px auto; /* Ajuste menor entre os jogos */
+}
+
+.match .team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Empilha bandeira e nome */
+  gap: 8px; /* Menor espaçamento entre itens */
+}
+
+.match img {
+  width: 20px; /* Reduzido para caber melhor */
+  height: 15px;
+  margin-right: 5px;
+}
+
+.match span {
+  font-size: 0.8rem; /* Fonte menor */
+  text-align: center; /* Centraliza texto */
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.team img {
+  width: 30px; /* Reduzido para telas menores */
+  height: 30px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+#random-simulation{
+  background-color: transparent;
+  border: 2px solid #2fc9f4;
+  color: #2fc9f4;
+}
+
+#manual-simulation{
+  background-color: transparent;
+  border: 2px solid #d02df0;
+  color: #d02df0;
+}
+
+#simulate-games {
+  background-color: transparent;
+  border: 2px solid #c722d6;
+  color: #c722d6;
+}
+
+#advance{
+  background-color: transparent;
+  border: 2px solid #189f38;
+  color: #189f38;
+  
+}
+
+#restart{
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+#reset{
+  background-color: transparent;
+  border: 2px solid #22a3d6;
+  color: #22a3d6;
+  
+}
+
+.trophy {
+  width: 100px; /* Reduzido para telas menores */
+  margin: 10px 0;
+}
+
+.list {
+  margin-top: 20%; /* Melhor alinhamento em celulares */
+}
+
+#winner-display {
+  display: flex;
+  flex-direction: column; /* Alinha verticalmente em telas pequenas */
+  align-items: center;
+  gap: 10px; /* Espaço entre bandeira e taça */
+  margin: 15px 0;
+}
+
+.winner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flag {
+  width: 60px; /* Reduzido para telas menores */
+  height: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin: 15px;
+}
+
+.trophy {
+  width: 150px; /* Reduzido */
+  height: auto;
+  margin: 15px;
+}
+
+#final-screen .controls button {
+  display: none;
+}
+
+#final-screen #restart {
+  display: inline-block;
+}
+
+/* Adiciona responsividade */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .match {
+    max-width: 300px;
+  }
+
+  .trophy {
+    width: 120px;
+  }
+
+  .flag {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.score-input {
+  width: 30px;
+  height: 25px;
+  font-size: 0.8rem;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 3px;
+  background-color: #2C0059;
+  color: white;
+
+}
+
+#instructions {
+  background-color: #3C0077;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  flex-grow: 1; /* Faz com que ocupe o mesmo espaço que outros elementos */
+}
+
+#instructions h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+#instructions p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
